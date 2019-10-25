@@ -26,6 +26,10 @@ const fi = (function() {
        return value;
     },
 
+
+    values: function(obj) {
+      
+    }
     functions: function() {
 
     },
