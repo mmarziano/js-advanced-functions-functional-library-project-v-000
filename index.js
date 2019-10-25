@@ -30,6 +30,8 @@ const fi = (function() {
     values: function(obj) {
       let values = [];
       Object.values(obj).map(v => values.push(v.value));
+      console.log('obj', obj)
+      console.log('v', values)
       return values;
     },
     
