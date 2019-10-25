@@ -28,6 +28,8 @@ const fi = (function() {
 
     find: function(collection, predicate) {
        let result = collection.find((item) => item === predicate)
+       console.log(collection)
+       console.log(predicate)
        return result;
     },
     
