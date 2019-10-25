@@ -27,10 +27,10 @@ const fi = (function() {
     },
 
     keys: function(obj) {
-      let values = [];
+      let keys = [];
       Object.keys(obj).map((obj) => values.push(obj));
     
-      return values;
+      return keys;
     },
     
     values: function(obj) {
