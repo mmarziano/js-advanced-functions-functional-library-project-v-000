@@ -64,9 +64,8 @@ const fi = (function() {
     first: function(collection, n) {
       if (!n) {
         return collection[0];
-      }
-      else {
-        console.log("hello")
+      } else {
+        
         return collection.slice(0, n);
       }
 
