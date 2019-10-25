@@ -23,6 +23,7 @@ const fi = (function() {
        let value = collection.reduce(function(acc, val, collection) {
             return acc + val;
        }, 0);
+       return value;
     },
 
     functions: function() {
