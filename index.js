@@ -19,12 +19,21 @@ const fi = (function() {
       
     },
 
-    reduce: function(collection, callback, acc) {
-       let value = collection.reduce(function(acc, val, collection) {
-            return acc + val;
-       }, 0);
-       return value;
-    },
+    reduce: function(c = [], callback = () => {}, acc) {
+			let collection = c.slice(0)
+
+			if (!acc) {
+				acc = collection[0]
+				collection = collection.slice(1)
+			}
+
+			let len = collection.length;
+
+			for (let i = 0; i < len; i++) {
+				acc = callback(acc, collection[i], collection)
+			}
+			return acc;
+		},
 
     find: function(collection, predicate) {
       if (!(collection instanceof Array))
