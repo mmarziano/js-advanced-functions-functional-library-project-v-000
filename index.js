@@ -6,7 +6,9 @@ const fi = (function() {
 
     each: function(collection, callback) {
       let newCollection = (collection instanceof Array) ? collection : Object.values(collection)
-      newCollection.map(callback)
+      for (let i=0; i < newCollection.length; i++) {
+        newCollection.forEach(callback)
+      }
       return collection
     },
 
