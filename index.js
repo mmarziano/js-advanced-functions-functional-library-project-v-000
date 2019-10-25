@@ -9,7 +9,7 @@ const fi = (function() {
       for (let i=0; i < newCollection.length; i++) {
         newCollection.forEach(callback)
       }
-      return newCollection
+      
       return collection
     },
 
