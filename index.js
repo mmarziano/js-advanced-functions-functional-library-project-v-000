@@ -66,7 +66,7 @@ const fi = (function() {
         return collection[0];
       }
       else {
-        console.log(collection.slice(0,n))
+        console.log("hello")
         return collection.slice(0, n);
       }
 
