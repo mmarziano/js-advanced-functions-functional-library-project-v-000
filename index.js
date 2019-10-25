@@ -29,7 +29,8 @@ const fi = (function() {
 
     values: function(obj) {
       
-    }
+    },
+    
     functions: function() {
 
     },
