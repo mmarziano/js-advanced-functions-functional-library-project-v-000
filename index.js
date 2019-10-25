@@ -26,6 +26,13 @@ const fi = (function() {
        return value;
     },
 
+    reduce: function(collection, callback, acc) {
+       let value = collection.reduce(function(acc, val, collection) {
+            return acc + val;
+       }, 0);
+       return value;
+    },
+    
     first: function(collection) {
         return collection[0];
     },
