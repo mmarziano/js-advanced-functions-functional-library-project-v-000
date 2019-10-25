@@ -65,10 +65,8 @@ const fi = (function() {
       if (!n) {
         return collection[0];
       } else {
-        
         return collection.slice(0, n);
       }
-
     },
 
     last: function(collection, start=false) {
