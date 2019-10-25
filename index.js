@@ -26,7 +26,7 @@ const fi = (function() {
        return value;
     },
 
-    reduce: function(collection, callback, acc) {
+    find: function(collection, callback, acc) {
        let value = collection.reduce(function(acc, val, collection) {
             return acc + val;
        }, 0);
