@@ -26,11 +26,8 @@ const fi = (function() {
        return value;
     },
 
-    find: function(collection, callback, acc) {
-       let value = collection.reduce(function(acc, val, collection) {
-            return acc + val;
-       }, 0);
-       return value;
+    find: function(collection, predicate) {
+       
     },
     
     first: function(collection) {
