@@ -16,6 +16,8 @@ const fi = (function() {
     map: function(collection, callback) {
       let newCollection = (collection instanceof Array) ? collection : Object.values(collection)
       newCollection.map(callback)
+      console.log('new', newCollection)
+      console.log('c', collection)
     },
 
     reduce: function() {
