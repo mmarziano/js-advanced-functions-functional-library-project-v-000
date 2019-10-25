@@ -61,13 +61,8 @@ const fi = (function() {
       return (collection instanceof Array) ? collection.length : Object.keys(collection).length
     },
 
-    first: function(collection, n=false) {
-      if (n) {
-        console.log('slice', collection.slice(0, n))
-        
-      } else {
-        console.log('first', collection[0])
-      }
+    first: function(collection, stop=false) {
+      return (stop) ? collection.slice(0, stop) : collection[0]
     },
 
     last: function(collection, start=false) {
