@@ -29,7 +29,7 @@ const fi = (function() {
 
     values: function(obj) {
       let values = [];
-      Object.values(obj).map((obj) => console.log(obj));
+      Object.values(obj).map((obj) => value.push(obj));
     
       return values;
     },
