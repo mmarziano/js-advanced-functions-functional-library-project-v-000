@@ -19,8 +19,10 @@ const fi = (function() {
       
     },
 
-    reduce: function() {
-
+    reduce: function(collection, callback, acc) {
+       let value = collection.reduce(function(acc, val, collection) {
+            return acc + val;
+       }, 0);
     },
 
     functions: function() {
