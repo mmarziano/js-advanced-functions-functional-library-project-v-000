@@ -26,7 +26,13 @@ const fi = (function() {
        return value;
     },
 
-
+    keys: function(obj) {
+      let values = [];
+      Object.keys(obj).map((obj) => values.push(obj));
+    
+      return values;
+    },
+    
     values: function(obj) {
       let values = [];
       Object.values(obj).map((obj) => values.push(obj));
