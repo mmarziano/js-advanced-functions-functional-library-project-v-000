@@ -29,9 +29,8 @@ const fi = (function() {
 
     values: function(obj) {
       let values = [];
-      Object.values(obj).map(v => values.push(v.value));
-      console.log('obj', obj)
-      console.log('v', values)
+      Object.values(obj).map((key, value) => values.push(key.value));
+    
       return values;
     },
     
