@@ -62,7 +62,11 @@ const fi = (function() {
     },
 
     first: function(collection, n) {
-      return (n) ? collection.slice(0, n) : collection[0]
+      if (n) {
+        return collection.slice(0, n)
+      } else {
+        return collection[0]
+      }
     },
 
     last: function(collection, start=false) {
