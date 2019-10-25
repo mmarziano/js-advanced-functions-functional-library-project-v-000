@@ -7,7 +7,7 @@ const fi = (function() {
     each: function(collection, callback) {
       let newCollection = (collection instanceof Array) ? collection : Object.values(collection)
       for (let i=0; i < newCollection.length; i++) {
-        newCollection[i](callback)
+        callback(newCollection[i])
       }
       
       return collection
