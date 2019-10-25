@@ -28,7 +28,7 @@ const fi = (function() {
 
     keys: function(obj) {
       let keys = [];
-      Object.keys(obj).map((obj) => values.push(obj));
+      Object.keys(obj).map((obj) => keys.push(obj));
     
       return keys;
     },
