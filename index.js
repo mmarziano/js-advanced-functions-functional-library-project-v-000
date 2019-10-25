@@ -26,11 +26,8 @@ const fi = (function() {
        return value;
     },
 
-     first: function(obj) {
-      let keys = [];
-      Object.keys(obj).map((obj) => keys.push(obj));
-    
-      return keys;
+     first: function(collection) {
+        return collection[0];
     },
     
     keys: function(obj) {
