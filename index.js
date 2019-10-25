@@ -26,7 +26,7 @@ const fi = (function() {
        return value;
     },
 
-     first: function(collection) {
+    first: function(collection) {
         return collection[0];
     },
     
